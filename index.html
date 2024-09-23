@@ -8,6 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind Customigation -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                header: '#F9F7F3',
+                'btn-green': '#B4F461',
+              }
+            }
+          }
+        }
+    </script>
+
     <!-- google-font added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,20 +35,67 @@
 
     <!-- added Header section -->
      <header>
- 
+        <!-- added navber -->
+         <nav class="">
+            <div class="navbar bg-header pt-5 pb-16 px-32">
+                <!-- Nav Start -->
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn px-9 h-[60px] text-2xl bg-btn-green font-semi-bold">
+                    Blog
+                  </a>
+                </div>
+
+                <!-- Nav Center -->
+                <div class="navbar-center hidden lg:flex">
+                  <img class="mx-2 w-[55px]" src="./assets/logo.png" alt="">
+                  <h1 class="mx-2 text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+
+                <!-- Nav End -->
+                <div class="navbar-end">
+                  <img class="mx-1 w-8" src="./assets/coin.png" alt="">
+                  <h1 class="mx-1 text-2xl font-semibold text-gray-600">5500</h1>
+                  <h1 class="mx-1 text-2xl font-semibold text-gray-600">BDT</h1>
+                </div>
+              </div>
+         </nav>
+
+
+        <!-- added hero section -->
+         <section class="flex justify-center py-14 ">
+            <button class="btn btn-xs lg:btn-lg mx-2 bg-btn-green px-8 text-2xl">Donation</button>
+            <button class="btn btn-xs lg:btn-lg mx-2 bg-white px-8 text-2xl border-2 border-gray-300">History</button>
+         </section>
      </header>
 
-
-    <!-- added Main section -->
-     <main>
- 
-     </main>
-
-
-    <!-- added Footer section -->
-     <footer>
- 
-     </footer>
-    
 </body>
 </html>
