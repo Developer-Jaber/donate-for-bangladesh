@@ -49,20 +49,23 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
         const currentBallanceOfCard1 = getInnerTextValue('donate-ballance-card1');
 
         document.getElementById('donate-ballance-card1').innerText = currentBallanceOfCard1 + newDonateAmountCard1;
-        }
 
+            // added transection 
+            const historySection = document.getElementById('history-section');
+            const p = document.createElement('p');
+            p.innerHTML = `
+            <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
+                <h1 class="text-lg font-bold">${newDonateAmountCard1} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                <p>Date: ${Date()}</p>
+            </div>
+            `
+            historySection.appendChild(p);
 
+            // call the modal
+            my_modal_5.showModal()
 
-        // added transection 
-        const historySection = document.getElementById('history-section');
-        const p = document.createElement('p');
-        p.innerHTML = `
-        <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-            <h1 class="text-lg font-bold">${newDonateAmountCard1} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-            <p>Date: ${Date()}</p>
-        </div>
-        `
-        historySection.appendChild(p);
+        };
+
 
     })
 
@@ -99,20 +102,24 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
         const currentBallanceOfCard2 = getInnerTextValue('donate-ballance-card2');
 
         document.getElementById('donate-ballance-card2').innerText = currentBallanceOfCard2 + newDonateAmountCard2;
-        }
+
+                 // added transection 
+            const historySection = document.getElementById('history-section');
+            const p = document.createElement('p');
+            p.innerHTML = `
+            <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
+                <h1 class="text-lg font-bold">${newDonateAmountCard2} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+                <p>Date: ${Date()}</p>
+            </div>
+            `
+            historySection.appendChild(p);
 
 
 
-        // added transection 
-        const historySection = document.getElementById('history-section');
-        const p = document.createElement('p');
-        p.innerHTML = `
-        <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-            <h1 class="text-lg font-bold">${newDonateAmountCard2} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-            <p>Date: ${Date()}</p>
-        </div>
-        `
-        historySection.appendChild(p);
+            // call the modal
+            my_modal_5.showModal()
+        };
+
     });
 
 
@@ -146,21 +153,26 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
             const currentBallanceOfCard3 = getInnerTextValue('donate-ballance-card3');
 
             document.getElementById('donate-ballance-card3').innerText = currentBallanceOfCard3 + newDonateAmountCard3;
-            }
 
 
 
+                        // added transection 
+                    const historySection = document.getElementById('history-section');
+                    const p = document.createElement('p');
+                    p.innerHTML = `
+                    <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
+                        <h1 class="text-lg font-bold">${newDonateAmountCard3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+                        <p>Date: ${Date()}</p>
+                    </div>
+                    `
+                    historySection.appendChild(p);
 
-            // added transection 
-        const historySection = document.getElementById('history-section');
-        const p = document.createElement('p');
-        p.innerHTML = `
-        <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-            <h1 class="text-lg font-bold">${newDonateAmountCard3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
-            <p>Date: ${Date()}</p>
-        </div>
-        `
-        historySection.appendChild(p);
+
+                    // call the modal
+                    my_modal_5.showModal()
+
+            };
+
     });
 
 
