@@ -31,13 +31,13 @@
     <!-- CSS file added -->
      <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="lexend-font">
+<body class="lexend-font ">
 
     <!-- added Header section -->
-     <header>
+     <header class="sticky top-0 z-40">
         <!-- added navber -->
          <nav class="">
-            <div class="navbar bg-header pt-5 pb-16 px-32">
+            <div class="navbar bg-header pt-4 pb-10 px-32">
                 <!-- Nav Start -->
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -69,7 +69,7 @@
                       <li><a>Item 3</a></li>
                     </ul>
                   </div>
-                  <a class="btn px-9 h-[60px] text-2xl bg-btn-green font-semi-bold">
+                  <a id="blog-button" class="btn px-9 h-[60px] text-2xl bg-btn-green font-semi-bold">
                     Blog
                   </a>
                 </div>
@@ -83,7 +83,7 @@
                 <!-- Nav End -->
                 <div class="navbar-end">
                   <img class="mx-1 w-8" src="./assets/coin.png" alt="">
-                  <h1 class="mx-1 text-2xl font-semibold text-gray-600">5500</h1>
+                  <h1 id="my-current-ballence" class="mx-1 text-2xl font-semibold text-gray-600">5500</h1>
                   <h1 class="mx-1 text-2xl font-semibold text-gray-600">BDT</h1>
                 </div>
               </div>
@@ -91,7 +91,7 @@
 
 
         <!-- added hero section -->
-         <section class="flex justify-center py-14 ">
+         <section class="flex justify-center py-7 bg-slate-50 ">
             <button class="btn btn-xs lg:btn-lg mx-2 bg-btn-green px-8 text-2xl">Donation</button>
             <button class="btn btn-xs lg:btn-lg mx-2 bg-white px-8 text-2xl border-2 border-gray-300">History</button>
          </section>
@@ -99,8 +99,8 @@
 
 
       <!-- added Main section -->
-      <main class="mx-36">
-
+      <main class="mx-40">
+       <section id="donate-section"> 
         <!-- card :----1 -->
           <div class="card lg:card-side bg-base-100 shadow-lg border-2 border-gray-200 mb-10">
               <figure class="m-8 w-1/2">
@@ -109,15 +109,15 @@
                   alt="Album" />
               </figure>
               <div class="card-body w-1/2">
-                <div class="rounded-lg w-32 p-3 flex bg-slate-100">
+                <div class="rounded-lg w-40 p-3 flex bg-slate-100">
                   <img class="mx-1" src="./assets/coin.png" alt="">
-                  <p class="text-xl mx-1 font-semibold text-gray-700">0</p>
+                  <p id="donate-ballance-card1" class="text-xl mx-1 font-semibold text-gray-700">0</p>
                   <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
                 </div>
                 <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="text-[17px] text-gray-600 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
-                <button type="button" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
+                <input id="donate-value-card1" class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount" autocomplete="off">
+                <button type="button" id="donate-btn-1" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
               </div>
           </div>
   
@@ -133,13 +133,13 @@
             <div class="card-body w-1/2">
               <div class="rounded-lg w-32 p-3 flex bg-slate-100">
                 <img class="mx-1" src="./assets/coin.png" alt="">
-                <p class="text-xl mx-1 font-semibold text-gray-700">0</p>
+                <p id="donate-ballance-card2" class="text-xl mx-1 font-semibold text-gray-700">0</p>
                 <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
               </div>
               <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
               <p class="text-[17px] text-gray-600 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-              <input class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
-              <button type="button" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
+              <input id="donate-value-card2" class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
+              <button type="button" id="donate-btn-2" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
             </div>
         </div>
   
@@ -155,15 +155,21 @@
           <div class="card-body w-1/2">
             <div class="rounded-lg w-32 p-3 flex bg-slate-100">
               <img class="mx-1" src="./assets/coin.png" alt="">
-              <p class="text-xl mx-1 font-semibold text-gray-700">0</p>
+              <p id="donate-ballance-card3" class="text-xl mx-1 font-semibold text-gray-700">0</p>
               <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
             </div>
             <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
             <p class="text-[17px] text-gray-600 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
-            <button type="button" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
+            <input id="donate-value-card3" class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
+            <button type="button" id="donate-btn-3" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
           </div>
         </div>
+
+       </section>
+
+       <section id="history-section">
+        
+       </section>
       </main>
   
      <!-- added Footer section -->
@@ -172,6 +178,9 @@
      </footer>
   
      
-
+     <!-- Added Js File -->
+      <script src="./js/index.js"></script>
+      <script src="./js/utilitis.js"></script>
+      <script src="./js/toggole.js"></script>
 </body>
 </html>

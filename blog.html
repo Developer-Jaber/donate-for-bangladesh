@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate For Bangladesh</title>
+    <!-- Deisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customigation -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                header: '#F9F7F3',
+                'btn-green': '#B4F461',
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- google-font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS file added -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="lexend-font">
+
+    <!-- added Header section -->
+     <header>
+        <!-- added navber -->
+         <nav class="">
+            <div class="navbar bg-header pt-5 pb-16 px-32">
+                <!-- Nav Start -->
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a id="home-button" class="btn px-9 h-[60px] text-2xl bg-btn-green font-semi-bold">
+                    Home
+                  </a>
+                </div>
+
+                <!-- Nav Center -->
+                <div class="navbar-center hidden lg:flex">
+                  <img class="mx-2 w-[55px]" src="./assets/logo.png" alt="">
+                  <h1 class="mx-2 text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+
+                <!-- Nav End -->
+                <div class="navbar-end">
+                  <img class="mx-1 w-8" src="./assets/coin.png" alt="">
+                  <h1 id="my-curren-ballence" class="mx-1 text-2xl font-semibold text-gray-600">5500</h1>
+                  <h1 class="mx-1 text-2xl font-semibold text-gray-600">BDT</h1>
+                </div>
+              </div>
+         </nav>
+
+
+        <!-- added hero section -->
+         <section class="flex justify-center py-14 ">
+           <h1 class="text-2xl font-bold">Important FAQ</h1>
+           <div class="my-10">
+            <!-- question:---1 -->
+            <div tabindex="0" class="w collapse collapse-plus border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">What Is The DOM?</div>
+              <div class="collapse-content">
+                <p tabindex="0">
+                  The DOM ,or Document Object Model, is pograming interface for web documents.<br>
+                  It represents the structure of a webpage as a tree of objects,where each node <br>
+                  corresponds to an element, attribute, or text in the HTML or XML document.
+                </p>
+              </div>
+            </div>
+
+            <!-- question:---2 -->
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">How does the DOM differ from HTML?</div>
+              <div class="collapse-content">
+                <p>
+                  HTML is the static markup language used to structure web content, while the DOM is <br>
+                  a dynamic representation of that content in the browser. When a webpage is loaded, the <br>
+                  browser converts the HTML into the DOM, which allows the content to be accessed and <br>
+                  modified in real-time through scripts. Changes made to the DOM are reflected instantly <br>
+                  on the page without requiring a reload.
+                </p>
+              </div>
+            </div>
+
+            <!-- question:---3 -->
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">What are the different types of DOM nodes?</div>
+              <div class="collapse-content">
+                <p>Answer: The DOM consists of various types of nodes, including:<br>
+                1. Element nodes: Represent HTML elements like &lt;div&gt;, &lt;p&gt;, &lt;a&gt;, etc.<br>
+                2. Text nodes: Represent the text content inside an element.<br>
+                3. Attribute nodes: Represent the attributes of HTML elements, such as class, id, or href.<br>
+                4. Comment nodes: Represent comments in the HTML code.</p>
+              </div>
+            </div>
+
+            <!-- question:---4 -->
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">How can you access DOM elements using JavaScript?</div>
+              <div class="collapse-content">
+                <p>Answer: You can access DOM elements using JavaScript by several methods:<br>
+                1. getElementById(): Selects an element by its unique ID.<br>
+                2. getElementsByClassName(): Selects elements by their class name.<br>
+                3. getElementsByTagName(): Selects elements by their tag name.<br>
+                4. querySelector(): Selects the first element that matches a CSS selector.<br>
+                5. querySelectorAll(): Selects all elements that match a CSS selector.</p><br>
+              </div>
+            </div>
+
+
+           </div>
+         </section>
+     </header>
+
+  
+     <!-- added Footer section -->
+     <footer class="bg-header py-14">
+      <p class="text-end mx-10">&copy; CopyRight Reserved By Bangladesh Government.Created by <span class="font-semibold">Jaber</span>,2024</p>
+     </footer>
+  
+     
+     <!-- Added Js File -->
+      <script src="./js/index.js"></script>
+      <script src="./js/utilitis.js"></script>
+</body>
+</html>
