@@ -16,26 +16,19 @@ function getInnerTextValue(id){
 }
 
 
-
-
 // This function is for navigate donate section to History section
-function navigateSecttion(){
-    
+function navigateSecttion(id){
+    // set section class
+    document.getElementById('donate-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+
+
+    const showSection = document.getElementById(id).classList.remove('hidden');
+
+    return showSection;
 }
 
 
 
-// // This function for result after updateing ballance
-// function newUpdatedBallance(previusBallance,newDonateBallance){
-    
-//     const newAvailavleBallance  = previusBallance + newDonateBallance;
-//     return newAvailavleBallance;
-// }
 
 
-// // Tis function for showing my balllance after donating
-// function myBallanceAfterDonating(myBallance,myDonateAmount){
-
-//     const newAvailavleBallanceAfterDonate = myBallance - myDonateAmount;
-//     return newAvailavleBallanceAfterDonate;
-// }

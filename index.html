@@ -92,15 +92,15 @@
 
         <!-- added hero section -->
          <section class="flex justify-center py-7 bg-slate-50 ">
-            <button class="btn btn-xs lg:btn-lg mx-2 bg-btn-green px-8 text-2xl">Donation</button>
-            <button class="btn btn-xs lg:btn-lg mx-2 bg-white px-8 text-2xl border-2 border-gray-300">History</button>
+            <button id="donation-sec-btn" class="btn btn-xs lg:btn-lg mx-2 bg-btn-green px-8 text-2xl">Donation</button>
+            <button id="history-sec-btn" class="btn btn-xs lg:btn-lg mx-2 bg-white px-8 text-2xl border-2 border-gray-300">History</button>
          </section>
      </header>
 
 
       <!-- added Main section -->
       <main class="mx-40">
-       <section id="donate-section"> 
+       <section id="donate-section" class=""> 
         <!-- card :----1 -->
           <div class="card lg:card-side bg-base-100 shadow-lg border-2 border-gray-200 mb-10">
               <figure class="m-8 w-1/2">
@@ -111,7 +111,7 @@
               <div class="card-body w-1/2">
                 <div class="rounded-lg w-40 p-3 flex bg-slate-100">
                   <img class="mx-1" src="./assets/coin.png" alt="">
-                  <p id="donate-ballance-card1" class="text-xl mx-1 font-semibold text-gray-700">0</p>
+                  <p id="donate-ballance-card1" class="text-xl mx-1 font-semibold text-gray-700">2400</p>
                   <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
                 </div>
                 <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -131,13 +131,13 @@
                 alt="Album" />
             </figure>
             <div class="card-body w-1/2">
-              <div class="rounded-lg w-32 p-3 flex bg-slate-100">
+              <div class="rounded-lg w-40 p-3 flex bg-slate-100">
                 <img class="mx-1" src="./assets/coin.png" alt="">
-                <p id="donate-ballance-card2" class="text-xl mx-1 font-semibold text-gray-700">0</p>
+                <p id="donate-ballance-card2" class="text-xl mx-1 font-semibold text-gray-700">1000</p>
                 <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
               </div>
-              <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="text-[17px] text-gray-600 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <h2 class="card-title text-xl font-extrabold">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p class="text-[17px] text-gray-600 "> Join us in supporting the flood relief efforts in Feni, Bangladesh. Your generous donations can provide essential supplies, shelter, and medical aid to those affected by the devastating floods. Every contribution makes a difference in rebuilding lives and communities. Together, we can bring hope and relief to those in need.</p>
               <input id="donate-value-card2" class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
               <button type="button" id="donate-btn-2" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
             </div>
@@ -153,13 +153,13 @@
               alt="Album" />
           </figure>
           <div class="card-body w-1/2">
-            <div class="rounded-lg w-32 p-3 flex bg-slate-100">
+            <div class="rounded-lg w-40 p-3 flex bg-slate-100">
               <img class="mx-1" src="./assets/coin.png" alt="">
-              <p id="donate-ballance-card3" class="text-xl mx-1 font-semibold text-gray-700">0</p>
+              <p id="donate-ballance-card3" class="text-xl mx-1 font-semibold text-gray-700">2800</p>
               <p class="text-xl mx-1 font-semibold text-gray-600">BDT</p>
             </div>
-            <h2 class="card-title text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h2>
-            <p class="text-[17px] text-gray-600 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <h2 class="card-title text-xl font-extrabold">Aid for Injured in the Quota Movement</h2>
+            <p class="text-[17px] text-gray-600 ">Support the injured individuals from the Quota Movement who have been affected while standing up for their rights. Many of them are in need of urgent medical care, rehabilitation, and emotional support. Your contributions will directly help cover medical expenses, therapy, and necessary treatments for their recovery. By donating, you can assist in healing both physical and emotional wounds. Let’s stand with these brave individuals and ensure they receive the care they deserve. Together, we can make a difference in their recovery journey.</p>
             <input id="donate-value-card3" class="border-2 border-gray-200 rounded-lg p-4 text-lg"  type="text" placeholder="Write Donation Amount">
             <button type="button" id="donate-btn-3" class="bg-btn-green rounded-lg p-4 text-[22px] font-bold">Donate Now</button>
           </div>
@@ -167,8 +167,7 @@
 
        </section>
 
-       <section id="history-section">
-        
+       <section id="history-section" class="hidden">
        </section>
       </main>
   
