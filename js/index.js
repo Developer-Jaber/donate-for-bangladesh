@@ -35,7 +35,7 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
             return
         }else if(newDonateAmountCard1 > myCurrentBallance){
             alert("You don't have enugh ballance!!!");
-        }else if(newDonateAmountCard1 === 0){
+        }else if(newDonateAmountCard1 < 0){
             alert('The donate amount is not valid!!')
         }else if(newDonateAmountCard1 === 0){
             alert('The donate amount is not valid!!')
@@ -88,7 +88,7 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
             return
         }else if(newDonateAmountCard2 > myCurrentBallance){
             alert("You don't have enugh ballance!!!");
-        }else if(newDonateAmountCard2 === 0){
+        }else if(newDonateAmountCard2 < 0){
             alert('The donate amount is not valid!!');
         }else if(newDonateAmountCard2 === 0){
             alert('The donate amount is not valid!!');
@@ -139,7 +139,7 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
                 return
             }else if(newDonateAmountCard3 > myCurrentBallance){
                 alert("You don't have enugh ballance!!!");
-            }else if(newDonateAmountCard3 === 0){
+            }else if(newDonateAmountCard3 < 0){
                 alert('The donate amount is not valid!!');
             }else if(newDonateAmountCard3 === 0){
                 alert('The donate amount is not valid!!');
