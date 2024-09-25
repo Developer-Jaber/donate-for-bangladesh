@@ -55,8 +55,8 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
             const p = document.createElement('p');
             p.innerHTML = `
             <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-                <h1 class="text-lg font-bold">${newDonateAmountCard1} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                <p>Date: ${Date()}</p>
+                <h1 class="text-md lg:text-lg font-bold">${newDonateAmountCard1} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                <p class="text-sm lg:text-md">Date: ${Date()}</p>
             </div>
             `
             historySection.appendChild(p);
@@ -108,8 +108,8 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
             const p = document.createElement('p');
             p.innerHTML = `
             <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-                <h1 class="text-lg font-bold">${newDonateAmountCard2} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-                <p>Date: ${Date()}</p>
+                <h1 class="text-md lg:text-lg font-bold">${newDonateAmountCard2} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+                <p class="text-sm lg:text-md">Date: ${Date()}</p>
             </div>
             `
             historySection.appendChild(p);
@@ -161,8 +161,8 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
                     const p = document.createElement('p');
                     p.innerHTML = `
                     <div class="border-2 rounded-xl border-gray-100 my-4 py-5 px-8">
-                        <h1 class="text-lg font-bold">${newDonateAmountCard3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
-                        <p>Date: ${Date()}</p>
+                        <h1 class="text-md lg:text-lg font-bold">${newDonateAmountCard3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+                        <p class="text-sm lg:text-md">Date: ${Date()}</p>
                     </div>
                     `
                     historySection.appendChild(p);
